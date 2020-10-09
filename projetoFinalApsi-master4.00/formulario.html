@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Polyana, Mateus Fonteles, Deivide, Bruno Thiago Neves">
+    <title>Tecnologia em Sistemas para Internet</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!--Icon-->
+    <link rel="icon" href="images/iconesite.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <!-- Font Awesome -->
+    <script src="js/all.js"></script>
+    <!-- Bootstrap Scripts -->
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Início da Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img src="./images/tsiLogo.jpeg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html" id="a1">Início <span class="sr-only">(Página
+                            atual)</span></a>
+                </li>
+                <li class="nav-item" id="a1">
+                    <a class="nav-link" id="a1" target="_blank " href=" https://www.ifb.edu.br/brasilia">
+                        Instituição</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link disabled" href="./video.html" id="a1">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="images/index.html#features" id="a1">Sobre o Curso</a>
+                </li>
+            </ul>
+
+        </div>
+        <a class="navbar-brand" href=""> <img src="./images/if.png" height="100px"></a>
+    </nav>
+    <div id="verde"></div>
+      <!--Fim da nav-->
+      <div class="container" id="div_formulario">
+          <div class="tituloFormulario">
+              <h1 class="h1_formulario">Enquete TSI</h1>
+          </div>
+          <!--Início do formulário-->
+    <form class="formlarioEnquete" method="POST" action="./php/formulario.php">
+        <!--Início da sessão 1 com os input text-->
+        <div class="sessao-um">
+        <div class="div-input-text">
+            <label for="nome">Nome :</label>
+            <input class="textInput nome validar" type="text" name="nome" id="nome" required>
+        </div>
+        <div class="div-input-text">
+            <label for="idade">Idade :</label>
+            <input class="textInput idade validar " type="number" name="idade" id="idade" required>
+        </div>
+        <div class="div-input-text">
+            <label for="cidade">Cidade :</label>
+            <input class="textInput cidade validar" type="text" name="cidade" id="cidade"required>
+        </div>
+    </div>
+    <!--Fim da sessão 1 com os input text-->
+        
+    <!--Início da sessão 2 com os input radio-->
+        <div class="sessao-dois">
+            <p>Turno de preferência</p>
+            <ul class="ulFormulario">
+                <li>
+                    <input type="radio" id="matutino" name="turno" value="matutino">
+                    <label for="matutino">Matutino</label>
+                </li>
+                <li>
+                    <input type="radio" name="turno" id="vespertino" value="vespertino">
+                    <label for="vespertino">Vespertino</label>
+                </li>
+                <li>
+                    <input type="radio" name="turno" id="noturno" value="noturno">
+                    <label for="noturno">Noturno</label>
+                </li>
+            </ul>
+        </div>
+    <!--Fim da sessão 2 com os input radio-->
+
+
+    <!--Início da sessão 3 com os input checkbox-->
+        <div class="sessao-tres">
+            <p>Em que área pretende atuar após se formar ?</p>
+            <ul class="ulFormulario">
+                <li>
+                    <input type="checkbox" id="desWeb" name="areaAtuacao[]" value="desenvolvimento web">
+                    <label for="deseWeb">Desenvolvimento Web</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="analSistema" name="areaAtuacao[]" value="analise de sistemas">
+                    <label for="analSistema">Análise de Sistemas</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="areaAtuacao[]" id="supRedes" value="suporte de redes">
+                    <label for="supRedes">Suporte de Redes</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="areaAtuacao[]" id="engSoft" value="engenaria de software">
+                    <label for="engSoft">Engenharia de Software</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="areaAtuacao[]" id="intCoisas" value="internet das coisas">
+                    <label for="intCoisas">Internet das Coisas</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="areaAtuacao[]" id="intArtficial" value="inteligencia artificial">
+                    <label for="intArtificial">Inteligência Artificial</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="areaAtuacao[]" id="outros" value="outros">
+                    <label for="outros">Outros</label>
+                </li>
+            </ul>
+        </div>
+    <!--Fim da sessão 3 com os input checkbox-->
+        <div>
+            <input class="btn btn-info btn-formulario" type="submit" value="Enviar">
+        </div>
+    </form>
+    <!--Fim do formulário-->
+</div>
+
+     <!-- Footer -->
+     <footer class="container" id="footer">
+        <div class="container-fluid">
+            <div>
+                <a target="_blank" href="https://www.facebook.com"><i class="social-icon fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.twitter.com"><i class="social-icon fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com"><i class="social-icon fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.email.com"><i class="social-icon fas fa-envelope"></i></a>
+            </div>
+            <p id="p">Tecnologia em Sistemas para nternet</p>
+        </div>
+    </footer>
+</body>
+
+</html>

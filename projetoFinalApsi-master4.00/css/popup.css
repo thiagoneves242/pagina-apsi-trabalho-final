@@ -1,0 +1,240 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/****************código do pop up*************************/
+
+/*container do modal*/
+.modal {
+  /* acompanha a barra de rolagem*/
+  position: fixed;
+  /*centraliza o posicionamento do modal*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  /*bordas do modal*/
+  border-radius: 10px;
+  z-index: 30 ;
+  /*cor de fundo do modal*/
+  background-color: #008000;
+  /*dimenção do modal */
+  width: 800px;
+  max-width: 80%;
+}
+/*escalonamento entre a sobreposição e o modal*/
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+
+}
+/*cabeçalho do modal*/
+.modal-header {
+  padding: 10px 15px;/*distancia das bordas */
+  display: flex;  /*inten alinhado lado a lado*/
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color:#228B22;
+}
+/*fonte e tamnho do cabeçalho titulo*/
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+  color:#ffff;
+}
+/*botão fechar*/
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.40rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+/*sobreposição de fundo*/
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+#color{
+  background-color: #00FF00;
+}
+
+/*codigo de fonte das letras */
+#P_modal{
+  text-align: justify-all;
+  margin: 0px 0px 16px;
+  font-size: 1.3rem;
+  color:#ffff;
+  font-weight: 100;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+}
+
+/**********************estilização pop up2**********************************/
+
+/*container do modal*/
+.modal1 {
+  /* acompanha a barra de rolagem*/
+  position: fixed;
+  /*centraliza o posicionamento do modal*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  /*bordas do modal*/
+  border-radius: 10px;
+  z-index: 10;
+  /*cor de fundo do modal*/
+  background-color: #228B22;
+  /*dimenção do modal */
+  width: 800px;
+  max-width: 80%;
+}
+/*escalonamento entre a sobreposição e o modal*/
+.modal1.active1 {
+  transform: translate(-50%, -50%) scale(1);
+
+}
+/*cabeçalho do modal*/
+.modal-header1 {
+  padding: 10px 15px;/*distancia das bordas */
+  display: flex;  /*inten alinhado lado a lado*/
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color:#008000;
+}
+/*fonte e tamnho do cabeçalho titulo*/
+.modal-header1 .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+  color:#ffff;
+}
+/*botão fechar*/
+.modal-header1 .close-button1 {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.40rem;
+  font-weight: bold;
+}
+
+.modal-body1 {
+  padding: 10px 15px;
+}
+/*sobreposição de fundo*/
+#overlay1 {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+#overlay1.active1{
+  opacity: 1;
+  pointer-events: all;
+}
+#color1{
+  background-color: #00FF00;
+}
+
+
+/**************** código da tabela************************/
+table,td, th{
+  border: 0.1px solid black;
+}
+table{
+  width: 100px;
+  text-align: center;
+  border-collapse: bold;
+  empty-cells: hide;
+}
+
+td,th{
+  height: 12px; 
+  vertical-align: middle;
+  border: bold;
+}
+th{
+  background-color: #ffff;
+}
+#amarelo{
+  background-color: #F0E68C;
+
+}
+#azul{
+  background-color: #7FFFD4;
+}
+
+#roxo{
+  background-color: #DA70D6;
+}
+#verde_table{
+  background-color: #32CD32;
+}
+#branco_table{
+  background-color: #ffff;
+}
+
+.btn{
+    color:#FFFFFF;
+
+
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: green;
+    border-color: #006400; ---mudar---essa--cor----para---verde---mais---claro 
+}
+.btn-info {
+    color: #fff;
+    background-color:#008000;
+    border-color: #FFFFFF;
+}
+#a1{
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+    color:#ffff;
+    padding: 0 8px 10px 8px;
+    font-family:Arial,Helvetica,sans-serif;
+    align-items: center;
+    font-size: 1;
+
+}
+#P_modal2{
+  text-align:justify;
+  margin: 0px 0px 5px;
+  font-size: 14.5px;
+  color:#ffff;
+  font-weight: 100;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,57 @@
+#div_formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formularioEnquete{
+    width: 100%;
+}
+
+.sessao-dois, .sessao-tres{
+    padding-top: 1.5rem;
+}
+
+.sessao-tres{
+    padding-bottom: 2em;
+}
+
+.tituloFormulario{
+    padding: 3rem 0 3rem 0;
+}
+.h1_formulario{
+    font-size: 1.8em;
+    color: #008000;
+}
+.div-input-text{
+    width: 80%;
+}
+
+.textInput{
+   width: 100%; 
+   padding: 10px 15px;
+   border: none;
+   border-bottom: 2px solid #3e978b;
+}
+
+.textInput:focus{
+    background-color:#f6f7d4 ;
+    transition: background-color 0.5s ease 0.2s;
+    
+}
+
+.ulFormulario{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-formulario{
+    width: 70%;
+}
+
+.btn-formulario:hover{
+    background-color: #81b214;
+    transition: background-color 0.5s ease 0.2s;
+}
